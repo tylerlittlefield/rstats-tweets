@@ -31,8 +31,8 @@ df_new_tweets %>%
 # cronR::cron_add(
 #   command = "cd /home/tyler/dev/rstats-tweets && /usr/bin/Rscript 'R/collect.R' >> 'R/collect.log' 2>&1",
 #   frequency = "daily",
-#   at = "4AM",
-#   id = "rstats Tweets",
+#   at = "11PM",
+#   id = "rstats tweets",
 #   tags = "#rstats, #twitter, #data",
-#   description = "Collects twitter data with 'rstats' in text, everyday at 4AM."
+#   description = "Collects twitter data with 'rstats' in text, everyday at 11PM."
 # )
