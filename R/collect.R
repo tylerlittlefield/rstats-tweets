@@ -10,6 +10,17 @@ df_old_tweets <- s3readRDS(
   bucket = "tylerlittlefield"
 )
 
+df_old_tweets_refreshed <- lookup_statuses(
+  statuses = unique(df_old_tweets$status_id),
+  token = readRDS(".rtweet_token2.rds")
+)
+
+df_old_tweets <- df_old_tweets %>% 
+  # filter out matching status id's to pull refreshed ones, any remaining are
+  # likely deleted tweets
+  filter(!status_id %in% df_old_tweets_refreshed$status_id) %>% 
+  bind_rows(df_old_tweets_refreshed) 
+
 df_new_tweets <- search_tweets(
   q = "rstats",
   n = 18000, 
@@ -24,7 +35,7 @@ df_new_tweets %>%
   { cat(glue("[{Sys.Date()}] Collecting {nrow(.)} new tweets...\n\n")); . } %>%
   bind_rows(df_old_tweets) %>% 
   s3saveRDS(
-    object = "rstats_tweets.rds", 
+    object = "rstats_tweets.rds",
     bucket = "tylerlittlefield"
   )
 
