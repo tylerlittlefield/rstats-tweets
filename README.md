@@ -21,17 +21,17 @@ interested in setting up a job to collect data. I think of it as a kind
 of template that I may come back to if there is any twitter data I’d
 like to routinely collect.
 
-    #> # A tibble: 2,738 x 2
+    #> # A tibble: 10,606 x 2
     #>    created_at          text                                                     
     #>    <dttm>              <chr>                                                    
-    #>  1 2020-02-10 03:16:14 "Dig into Data Science Day on March 3 by registering for…
-    #>  2 2020-02-10 03:07:04 "#SAP Launches End-to-End Chatbot Platform for the Enter…
-    #>  3 2020-02-03 20:49:34 "Difference Between #MachineLearning and #DeepLearning @…
-    #>  4 2020-02-10 03:02:01 "End to End Machine Learning with Natural Language Proce…
-    #>  5 2020-02-06 05:37:03 "SnapLogic Introduces Self-Service Solution for End-to-E…
-    #>  6 2020-02-04 06:01:10 "A #Bitcoin Trading Bot Written in #NodeJS. #BigData #An…
-    #>  7 2020-02-07 14:29:42 "Tools for the Measurement of Animal Behavior in #Neuros…
-    #>  8 2020-02-03 20:37:06 "Automatic Machine Learning @Capgemini. #BigData #Analyt…
-    #>  9 2020-02-04 05:47:09 "All Kinds of Text Classification Models Explained. #Big…
-    #> 10 2020-02-04 05:42:10 "The Autonomous Learning Library for Building #Reinforce…
-    #> # … with 2,728 more rows
+    #>  1 2020-02-29 23:13:15 "IAM Platform Curated Retweet:\n\nVia: https://t.co/qx1b…
+    #>  2 2020-02-29 23:10:45 "{poorman} now has inner, left, right and full joins. Mo…
+    #>  3 2020-02-29 23:07:17 "Weighted Linear Support Vector Machine https://t.co/aR5…
+    #>  4 2020-02-28 20:04:05 "By inspiration from @aecoppock, I made a quick R packag…
+    #>  5 2020-02-27 16:09:00 "Take a Sad Script &amp; Make it Better: Tidymodels Edit…
+    #>  6 2020-02-27 22:30:44 "My latest blog post is in the spirit of working efficie…
+    #>  7 2020-02-24 21:26:38 "I like the tufte Rmarkdown theme for its sidenotes func…
+    #>  8 2020-02-24 17:39:25 "My new {usa} #rstats 📦 was just released on CRAN! As a …
+    #>  9 2020-02-22 22:53:37 "#r #rstats #RStudio https://t.co/inuu5231r5"            
+    #> 10 2020-02-21 20:28:30 "$APT \n\n$TVIX &lt;\n\n#DeepLearning #BigData #Analytic…
+    #> # … with 10,596 more rows
