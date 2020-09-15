@@ -22,7 +22,7 @@ con <- DBI::dbConnect(
 )
 
 # currently collected tweets (status IDs)
-cur_ids <- tbl(con, "rstats_twitter") %>% 
+cur_ids <- tbl(con, in_schema("twitter", "rstats")) %>% 
   distinct(status_id) %>% 
   collect()
 
@@ -46,7 +46,7 @@ df_append_to_db <- df_new_tweets %>%
 cat(glue("[{Sys.Date()}] Collecting {nrow(df_append_to_db)} new tweets...\n\n"))
 
 # append to the database table
-dbWriteTable(con, "rstats_twitter", df_append_to_db, append = TRUE)
+dbWriteTable(con, SQL("twitter.rstats"), df_append_to_db, append = TRUE)
 
 # disconnect
 dbDisconnect(con)
