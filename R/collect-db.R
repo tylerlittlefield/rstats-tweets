@@ -33,7 +33,7 @@ df_new_tweets <- search_tweets2(
   include_rts = FALSE, 
   retryonratelimit = TRUE, 
   verbose = FALSE, 
-  token = readRDS(".rtweet_token2.rds")
+  token = readRDS(".rtweet_token.rds")
 )
 
 # get status IDs that we currently do not have
