@@ -52,7 +52,7 @@ dbWriteTable(con, SQL("twitter.rstats"), df_append_to_db, append = TRUE)
 dbDisconnect(con)
 
 # cronR::cron_add(
-#   command = "cd /home/tyler/dev/rstats-tweets && /usr/bin/Rscript 'R/collect-db.R' >> 'R/collect-db.log' 2>&1",
+#   command = "cd ~/data-pipelines/rstats-tweets && /usr/bin/Rscript 'R/collect-db.R' >> 'R/collect-db.log' 2>&1",
 #   frequency = "daily",
 #   at = "11PM",
 #   id = "rstats tweets",
